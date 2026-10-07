@@ -89,13 +89,12 @@ jobs:
       - name: build-wasm
         run: emcmake cmake . -B build/wasm
 
-      # Change name of the input .a library to match the projects name (same as in comple-wasm.bat)
       - name: compile-wasm
         run: |
           cmake --build build/wasm --target clean
           cmake --build build/wasm
           mkdir bin
           mkdir bin/wasm
-          emcc -g build/wasm/libbt_template.a -o bin/wasm/template.js
+          emcc -g build/wasm/libbt_types.a -o bin/wasm/types.js
 
       
