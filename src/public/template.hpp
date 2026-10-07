@@ -1,6 +1,6 @@
 #include <print>
 
-namespace bt_template
+namespace bt::types
 {
     void example_fun();
 } // namespace bt_template

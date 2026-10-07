@@ -2,6 +2,6 @@
 
 int main()
 {
-    bt_template::example_fun();
+    bt::types::example_fun();
     return 0;
 }
